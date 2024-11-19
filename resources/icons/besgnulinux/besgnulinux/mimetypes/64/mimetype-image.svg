@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="64px"
+   height="64px"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg320"
+   sodipodi:docname="mimetype-image.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview322"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="3.6875"
+     inkscape:cx="32"
+     inkscape:cy="32.135593"
+     inkscape:window-width="1432"
+     inkscape:window-height="844"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg320" />
+  <defs
+     id="defs311">
+    <linearGradient
+       id="linear0"
+       gradientUnits="userSpaceOnUse"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1"
+       gradientTransform="matrix(12,0,0,12,40,12)">
+      <stop
+         offset="0"
+         style="stop-color:#c5eeed;stop-opacity:1;"
+         id="stop296" />
+      <stop
+         offset="1"
+         style="stop-color:#0c7672;stop-opacity:1;"
+         id="stop298" />
+    </linearGradient>
+    <linearGradient
+       id="linear1"
+       gradientUnits="userSpaceOnUse"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1"
+       gradientTransform="matrix(56,0,0,56,4,4)">
+      <stop
+         offset="0"
+         style="stop-color:#c5eeed;stop-opacity:1;"
+         id="stop301" />
+      <stop
+         offset="1"
+         style="stop-color:#0c7672;stop-opacity:1;"
+         id="stop303" />
+    </linearGradient>
+    <linearGradient
+       id="linear2"
+       gradientUnits="userSpaceOnUse"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1"
+       gradientTransform="matrix(32,0,0,22,12,22)">
+      <stop
+         offset="0"
+         style="stop-color:#c5eeed;stop-opacity:1;"
+         id="stop306" />
+      <stop
+         offset="1"
+         style="stop-color:#0c7672;stop-opacity:1;"
+         id="stop308" />
+    </linearGradient>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Diffuse Light"
+       id="filter1119"
+       x="-0.042857143"
+       y="-0.042857143"
+       width="1.0857143"
+       height="1.0857143">
+      <feGaussianBlur
+         in="SourceGraphic"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur1109" />
+      <feDiffuseLighting
+         diffuseConstant="1"
+         surfaceScale="10"
+         lighting-color="rgb(255,255,255)"
+         result="diffuse"
+         id="feDiffuseLighting1113">
+        <feDistantLight
+           elevation="8"
+           azimuth="235"
+           id="feDistantLight1111" />
+      </feDiffuseLighting>
+      <feComposite
+         in="diffuse"
+         in2="diffuse"
+         operator="arithmetic"
+         k1="1"
+         result="composite1"
+         id="feComposite1115" />
+      <feComposite
+         in="composite1"
+         in2="SourceGraphic"
+         k1="1"
+         operator="arithmetic"
+         k3="1"
+         result="composite2"
+         id="feComposite1117" />
+    </filter>
+  </defs>
+  <g
+     id="surface1"
+     style="filter:url(#filter1119)">
+    <path
+       style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);"
+       d="M 46 12 C 42.6875 12 40 14.6875 40 18 C 40 21.3125 42.6875 24 46 24 C 49.3125 24 52 21.3125 52 18 C 52 14.6875 49.3125 12 46 12 Z M 46 12 "
+       id="path313" />
+    <path
+       style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);"
+       d="M 4 4 L 4 60 L 60 60 L 60 4 Z M 8 8 L 56 8 L 56 48 L 8 48 Z M 8 8 "
+       id="path315" />
+    <path
+       style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);"
+       d="M 24 22 L 12 44 L 44 44 L 34 26 L 30 32 Z M 24 22 "
+       id="path317" />
+  </g>
+</svg>
