@@ -1,0 +1,147 @@
+controls:
+  - name: "Mode"
+    has_labels: true
+    has_control: true
+    has_gap: false
+    items:
+      - control:
+          position: [1, 1]
+          span: [2, 3]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 0
+
+  - name: "Addresses"
+    has_labels: true
+    has_control: true
+    has_gap: false
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [4, 0]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 0
+      - control:
+          position: [4, 1]
+          span: [1, 4]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 0
+
+  - name: "Line 1"
+    has_labels: true
+    has_control: true
+    has_gap: false
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [6, 0]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 0
+      - control:
+          position: [6, 1]
+          span: [1, 4]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 0
+
+  - name: "Line 2"
+    has_labels: true
+    has_control: true
+    has_gap: false
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [7, 0]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 0
+      - control:
+          position: [7, 1]
+          span: [1, 4]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 0
+
+  - name: "Suburb"
+    has_labels: true
+    has_control: true
+    has_gap: false
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [8, 0]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 0
+      - control:
+          position: [8, 1]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 0
+
+  - name: "State"
+    has_labels: true
+    has_control: true
+    has_gap: false
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [8, 2]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 0
+      - control:
+          position: [8, 3]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 0
+
+  - name: "Postcode"
+    has_labels: true
+    has_control: true
+    has_gap: false
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [9, 0]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 0
+      - control:
+          position: [9, 1]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 0
+
+  - name: "Country"
+    has_labels: true
+    has_control: true
+    has_gap: false
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [9, 2]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 0
+      - control:
+          position: [9, 3]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 0
+
+  - name: "Same"
+    has_labels: true
+    has_control: true
+    has_gap: false
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [11, 1]
+            span: [1, 2]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxRESERVE_SPACE_EVEN_IF_HIDDEN"]
+            borderWidth: 0
+      - control:
+          position: [11, 0]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT", "wxRESERVE_SPACE_EVEN_IF_HIDDEN"]
+          borderWidth: 0
