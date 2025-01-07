@@ -1,4 +1,5 @@
 controls:
+
   - name: "Title"
     has_labels: true
     has_control: true
@@ -8,13 +9,13 @@ controls:
           - which: "LIX::Main"
             position: [1, 0]
             span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 0
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
+            borderWidth: 3
       - control:
           position: [1, 1]
           span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 0
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
+          borderWidth: 3
 
   - name: "Given Name"
     has_labels: true
@@ -25,13 +26,13 @@ controls:
           - which: "LIX::Main"
             position: [2, 0]
             span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 0
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
+            borderWidth: 3
       - control:
           position: [2, 1]
           span: [1, 4]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 0
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
+          borderWidth: 3
 
   - name: "Family Name"
     has_labels: true
@@ -42,15 +43,15 @@ controls:
           - which: "LIX::Main"
             position: [3, 0]
             span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 0
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
+            borderWidth: 3
       - control:
           position: [3, 1]
           span: [1, 4]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 0
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
+          borderWidth: 3
 
-  - name: "Family name printed first"
+  - name: "Family name comes first"
     has_labels: true
     has_control: true
     has_gap: false
@@ -59,18 +60,18 @@ controls:
           - which: "LIX::Main"
             position: [4, 0]
             span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 0
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
+            borderWidth: 3
           - which: "LIX::Second"
             position: [5, 0]
             span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 0
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
+            borderWidth: 3
       - control:
           position: [4, 1]
           span: [2, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL"]
-          borderWidth: 0
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP"]
+          borderWidth: 3
 
   - name: "Mobile Phone"
     has_labels: true
@@ -81,15 +82,15 @@ controls:
           - which: "LIX::Main"
             position: [7, 0]
             span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 0
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
+            borderWidth: 3
       - control:
           position: [7, 1]
           span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 0
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
+          borderWidth: 3
 
-  - name: "Home Phone"
+  - name: "Landline"
     has_labels: true
     has_control: true
     has_gap: false
@@ -98,30 +99,13 @@ controls:
           - which: "LIX::Main"
             position: [8, 0]
             span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 0
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
+            borderWidth: 3
       - control:
           position: [8, 1]
           span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 0
-
-  - name: "Office Number"
-    has_labels: true
-    has_control: true
-    has_gap: false
-    items:
-      - labels:
-          - which: "LIX::Main"
-            position: [8, 0]
-            span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 0
-      - control:
-          position: [8, 1]
-          span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 0
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
+          borderWidth: 3
 
   - name: "Date of Birth"
     has_labels: true
@@ -132,13 +116,13 @@ controls:
           - which: "LIX::Main"
             position: [7, 2]
             span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 0
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
+            borderWidth: 3
       - control:
           position: [7, 3]
           span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 0
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
+          borderWidth: 3
 
   - name: "Fax Line"
     has_labels: true
@@ -149,13 +133,13 @@ controls:
           - which: "LIX::Main"
             position: [7, 2]
             span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 0
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
+            borderWidth: 3
       - control:
           position: [7, 3]
           span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 0
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
+          borderWidth: 3
 
   - name: "Email Address"
     has_labels: true
@@ -166,10 +150,21 @@ controls:
           - which: "LIX::Main"
             position: [8, 2]
             span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 0
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
+            borderWidth: 3
       - control:
           position: [8, 3]
           span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 0
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
+          borderWidth: 3
+
+  - name: "InfoBar"
+    has_labels: false
+    has_control: true
+    has_gap: false
+    items:
+      - control:
+          position: [9, 0]
+          span: [2, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
+          borderWidth: 3
