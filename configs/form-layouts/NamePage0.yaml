@@ -1,17 +1,57 @@
 controls:
 
-  - name: "Mode"
+  - name: "Title"
     has_labels: true
     has_control: true
     has_gap: false
     items:
+      - labels:
+          - which: "LIX::Main"
+            position: [1, 0]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
+            borderWidth: 3
       - control:
           position: [1, 1]
-          span: [2, 3]
+          span: [1, 1]
           flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
           borderWidth: 3
 
-  - name: "Existing Addresses"
+  - name: "Given Name"
+    has_labels: true
+    has_control: true
+    has_gap: false
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [2, 0]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
+            borderWidth: 3
+      - control:
+          position: [2, 1]
+          span: [1, 4]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
+          borderWidth: 3
+
+  - name: "Family Name"
+    has_labels: true
+    has_control: true
+    has_gap: false
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [3, 0]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
+            borderWidth: 3
+      - control:
+          position: [3, 1]
+          span: [1, 4]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
+          borderWidth: 3
+
+  - name: "Family name comes first"
     has_labels: true
     has_control: true
     has_gap: false
@@ -21,31 +61,19 @@ controls:
             position: [4, 0]
             span: [1, 1]
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
-            borderWidth: 6
-      - control:
-          position: [4, 1]
-          span: [1, 4]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
-          borderWidth: 3
-
-  - name: "Address Line 1"
-    has_labels: true
-    has_control: true
-    has_gap: false
-    items:
-      - labels:
-          - which: "LIX::Main"
-            position: [6, 0]
+            borderWidth: 3
+          - which: "LIX::Second"
+            position: [5, 0]
             span: [1, 1]
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
-            borderWidth: 6
+            borderWidth: 3
       - control:
-          position: [6, 1]
-          span: [1, 4]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
+          position: [4, 1]
+          span: [2, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP"]
           borderWidth: 3
 
-  - name: "Address Line 2"
+  - name: "Mobile Phone"
     has_labels: true
     has_control: true
     has_gap: false
@@ -55,14 +83,14 @@ controls:
             position: [7, 0]
             span: [1, 1]
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
-            borderWidth: 6
+            borderWidth: 3
       - control:
           position: [7, 1]
-          span: [1, 4]
+          span: [1, 1]
           flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
           borderWidth: 3
 
-  - name: "City"
+  - name: "Landline"
     has_labels: true
     has_control: true
     has_gap: false
@@ -72,14 +100,48 @@ controls:
             position: [8, 0]
             span: [1, 1]
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
-            borderWidth: 6
+            borderWidth: 3
       - control:
           position: [8, 1]
           span: [1, 1]
           flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
           borderWidth: 3
 
-  - name: "State or Provence"
+  - name: "Date of Birth"
+    has_labels: true
+    has_control: true
+    has_gap: false
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [7, 2]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
+            borderWidth: 3
+      - control:
+          position: [7, 3]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
+          borderWidth: 3
+
+  - name: "Fax Line"
+    has_labels: true
+    has_control: true
+    has_gap: false
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [7, 2]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
+            borderWidth: 3
+      - control:
+          position: [7, 3]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
+          borderWidth: 3
+
+  - name: "Email Address"
     has_labels: true
     has_control: true
     has_gap: false
@@ -89,62 +151,11 @@ controls:
             position: [8, 2]
             span: [1, 1]
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
-            borderWidth: 6
+            borderWidth: 3
       - control:
           position: [8, 3]
           span: [1, 1]
           flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
-          borderWidth: 3
-
-  - name: "Postal Code"
-    has_labels: true
-    has_control: true
-    has_gap: false
-    items:
-      - labels:
-          - which: "LIX::Main"
-            position: [9, 0]
-            span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
-            borderWidth: 6
-      - control:
-          position: [9, 1]
-          span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
-          borderWidth: 3
-
-  - name: "Country"
-    has_labels: true
-    has_control: true
-    has_gap: false
-    items:
-      - labels:
-          - which: "LIX::Main"
-            position: [9, 2]
-            span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxRIGHT", "wxTOP", "wxALIGN_RIGHT"]
-            borderWidth: 6
-      - control:
-          position: [9, 3]
-          span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
-          borderWidth: 3
-
-  - name: "Postal Address is the same"
-    has_labels: true
-    has_control: true
-    has_gap: false
-    items:
-      - labels:
-          - which: "LIX::Main"
-            position: [11, 1]
-            span: [1, 2]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxRESERVE_SPACE_EVEN_IF_HIDDEN"]
-            borderWidth: 6
-      - control:
-          position: [11, 0]
-          span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxALIGN_RIGHT", "wxRESERVE_SPACE_EVEN_IF_HIDDEN"]
           borderWidth: 3
 
   - name: "InfoBar"
@@ -153,7 +164,7 @@ controls:
     has_gap: false
     items:
       - control:
-          position: [12, 0]
-          span: [1, 6]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"] #, "wxRESERVE_SPACE_EVEN_IF_HIDDEN"]
-          borderWidth: 0
+          position: [9, 0]
+          span: [2, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxLEFT", "wxTOP", "wxGROW"]
+          borderWidth: 3
