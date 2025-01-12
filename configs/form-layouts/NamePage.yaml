@@ -80,6 +80,22 @@ controls:
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL"]
             borderWidth: 3
 
+  - name: "Have PBS Concession"
+    has_labels: true
+    has_control: true
+    items:
+      - control:
+          position: [4, 2]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALIGN_RIGHT"]
+          borderWidth: 3
+      - labels:
+          - which: "LIX::Main"
+            position: [4, 3]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL"]
+            borderWidth: 3
+
   - name: "Want SMS Alerts"
     has_labels: true
     has_control: true
@@ -96,6 +112,22 @@ controls:
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL"]
             borderWidth: 3
 
+  - name: "GP"
+    has_labels: true
+    has_control: true
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [5, 2]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 3
+      - control:
+          position: [5, 3]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 3
+
   - name: "Want Email Alerts"
     has_labels: true
     has_control: true
@@ -111,6 +143,22 @@ controls:
             span: [1, 1]
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL"]
             borderWidth: 3
+
+  - name: "Pharmacist"
+    has_labels: true
+    has_control: true
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [6, 2]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 3
+      - control:
+          position: [6, 3]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 3
 
   - name: "Mobile Phone"
     has_labels: true
