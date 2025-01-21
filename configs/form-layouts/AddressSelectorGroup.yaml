@@ -1,0 +1,37 @@
+controls:
+
+  - name: "Addresses Same"
+    has_labels: true
+    has_control: true
+    items:
+      - control:
+          position: [1, 0]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW", "wxALIGN_RIGHT"]
+          borderWidth: 3
+      - labels:
+          - which: "LIX::Main"
+            position: [1, 1]
+            span: [1, 3]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL"]
+            borderWidth: 5
+
+  - name: "Physical Address"
+    has_labels: false
+    has_control: true
+    items:
+      - control:
+          position: [1, 4]
+          span: [1, 4]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW", "wxRESERVE_SPACE_EVEN_IF_HIDDEN"]
+          borderWidth: 5
+
+  - name: "Postal Address"
+    has_labels: false
+    has_control: true
+    items:
+      - control:
+          position: [1, 8]
+          span: [1, 4]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW", "wxRESERVE_SPACE_EVEN_IF_HIDDEN"]
+          borderWidth: 3

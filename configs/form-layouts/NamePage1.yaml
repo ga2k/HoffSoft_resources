@@ -1,0 +1,75 @@
+controls:
+
+  - name: "Mobile Phone"
+    has_labels: true
+    has_control: true
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [8, 0]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 3
+      - control:
+          position: [8, 1]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 3
+
+  - name: "Landline"
+    has_labels: true
+    has_control: true
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [8, 2]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 3
+      - control:
+          position: [8, 3]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 3
+
+  - name: "Fax Line"
+    has_labels: true
+    has_control: true
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [9, 0]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 3
+      - control:
+          position: [9, 1]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 3
+
+  - name: "Email Address"
+    has_labels: true
+    has_control: true
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [9, 2]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 3
+      - control:
+          position: [9, 3]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 3
+
+  - name: "InfoBar"
+    has_labels: false
+    has_control: true
+    items:
+      - control:
+          position: [10, 0]
+          span: [2, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 3
