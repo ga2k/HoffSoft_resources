@@ -1,6 +1,17 @@
+
 controls:
 
-  - name: "Address Selector"
+  - name: "Physical Address"
+    has_labels: false
+    has_control: true
+    items:
+      - control:
+          position: [0, 0]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 5
+
+  - name: "Addresses Same"
     has_labels: false
     has_control: true
     items:
@@ -10,7 +21,7 @@ controls:
           flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
           borderWidth: 5
 
-  - name: "Physical Address"
+  - name: "Postal Address"
     has_labels: false
     has_control: true
     items:
@@ -19,23 +30,12 @@ controls:
           span: [1, 1]
           flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
           borderWidth: 5
-
-  - name: "Postal Address"
-    has_labels: false
-    has_control: true
-    items:
-      - control:
-          position: [3, 0]
-          span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 5
-
   - name: "InfoBar"
     has_labels: false
     has_control: true
     items:
       - control:
-          position: [4, 0]
+          position: [3, 0]
           span: [2, 1]
           flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"] #, "wxRESERVE_SPACE_EVEN_IF_HIDDEN"]
           borderWidth: 5

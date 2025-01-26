@@ -5,18 +5,50 @@ controls:
     has_control: true
     items:
       - control:
+          position: [0, 0]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALIGN_RIGHT"]
+          borderWidth: 5
+      - labels:
+          - which: "LIX::Main"
+            position: [0, 1]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL"]
+            borderWidth: 5
+
+  - name: "Medicare Number"
+    has_labels: true
+    has_control: true
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [0, 2]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 5
+      - control:
+          position: [0, 3]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 5
+
+  - name: "Want SMS Alerts"
+    has_labels: true
+    has_control: true
+    items:
+      - control:
           position: [1, 0]
           span: [1, 1]
           flags: ["wxALIGN_CENTRE_VERTICAL", "wxALIGN_RIGHT"]
-          borderWidth: 3
+          borderWidth: 5
       - labels:
           - which: "LIX::Main"
             position: [1, 1]
             span: [1, 1]
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL"]
-            borderWidth: 3
+            borderWidth: 5
 
-  - name: "Medicare Number"
+  - name: "Medicare Index"
     has_labels: true
     has_control: true
     items:
@@ -25,14 +57,14 @@ controls:
             position: [1, 2]
             span: [1, 1]
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 3
+            borderWidth: 5
       - control:
           position: [1, 3]
           span: [1, 1]
           flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 3
+          borderWidth: 5
 
-  - name: "Want SMS Alerts"
+  - name: "Want Email Alerts"
     has_labels: true
     has_control: true
     items:
@@ -40,45 +72,13 @@ controls:
           position: [2, 0]
           span: [1, 1]
           flags: ["wxALIGN_CENTRE_VERTICAL", "wxALIGN_RIGHT"]
-          borderWidth: 3
+          borderWidth: 5
       - labels:
           - which: "LIX::Main"
             position: [2, 1]
             span: [1, 1]
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL"]
-            borderWidth: 3
-
-  - name: "Medicare Index"
-    has_labels: true
-    has_control: true
-    items:
-      - labels:
-          - which: "LIX::Main"
-            position: [2, 2]
-            span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 3
-      - control:
-          position: [2, 3]
-          span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 3
-
-  - name: "Want Email Alerts"
-    has_labels: true
-    has_control: true
-    items:
-      - control:
-          position: [3, 0]
-          span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALIGN_RIGHT"]
-          borderWidth: 3
-      - labels:
-          - which: "LIX::Main"
-            position: [3, 1]
-            span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL"]
-            borderWidth: 3
+            borderWidth: 5
 
   - name: "Have PBS Concession"
     has_labels: true
@@ -86,17 +86,49 @@ controls:
     items:
       - labels:
           - which: "LIX::Main"
-            position: [3, 2]
+            position: [2, 2]
             span: [1, 1]
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL"]
-            borderWidth: 3
+            borderWidth: 5
+      - control:
+          position: [2, 3]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALIGN_RIGHT"]
+          borderWidth: 5
+
+  - name: "YTD Copay"
+    has_labels: true
+    has_control: true
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [3, 0]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 5
+      - control:
+          position: [3, 1]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 5
+
+  - name: "Copay Threshold"
+    has_labels: true
+    has_control: true
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [3, 2]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 5
       - control:
           position: [3, 3]
           span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALIGN_RIGHT"]
-          borderWidth: 3
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 5
 
-  - name: "YTD Copay"
+  - name: "Date Reached"
     has_labels: true
     has_control: true
     items:
@@ -105,46 +137,30 @@ controls:
             position: [4, 0]
             span: [1, 1]
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 3
+            borderWidth: 5
       - control:
           position: [4, 1]
           span: [1, 1]
           flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 3
-
-  - name: "Copay Threshold"
-    has_labels: true
-    has_control: true
-    items:
-      - labels:
-          - which: "LIX::Main"
-            position: [4, 2]
-            span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 3
-      - control:
-          position: [4, 3]
-          span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 3
-
-  - name: "Date Reached"
-    has_labels: true
-    has_control: true
-    items:
-      - labels:
-          - which: "LIX::Main"
-            position: [5, 0]
-            span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 3
-      - control:
-          position: [5, 1]
-          span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 3
+          borderWidth: 5
 
   - name: "GP"
+    has_labels: true
+    has_control: true
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [6, 0]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 5
+      - control:
+          position: [6, 1]
+          span: [1, 3]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 5
+
+  - name: "Pharmacist"
     has_labels: true
     has_control: true
     items:
@@ -153,25 +169,9 @@ controls:
             position: [7, 0]
             span: [1, 1]
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 3
+            borderWidth: 5
       - control:
           position: [7, 1]
           span: [1, 3]
           flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 3
-
-  - name: "Pharmacist"
-    has_labels: true
-    has_control: true
-    items:
-      - labels:
-          - which: "LIX::Main"
-            position: [8, 0]
-            span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 3
-      - control:
-          position: [8, 1]
-          span: [1, 3]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 3
+          borderWidth: 5

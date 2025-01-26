@@ -7,17 +7,34 @@ controls:
     items:
       - labels:
           - which: "LIX::Main"
-            position: [1, 0]
+            position: [0, 0]
             span: [1, 1]
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 6
+            borderWidth: 5
       - control:
-          position: [1, 1]
+          position: [0, 1]
           span: [1, 4]
           flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 3
+          borderWidth: 5
 
   - name: "Address Line 1"
+    has_labels: true
+    has_control: true
+    has_gap: false
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [2, 0]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 5
+      - control:
+          position: [2, 1]
+          span: [1, 4]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 5
+
+  - name: "Address Line 2"
     has_labels: true
     has_control: true
     has_gap: false
@@ -27,14 +44,14 @@ controls:
             position: [3, 0]
             span: [1, 1]
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 6
+            borderWidth: 5
       - control:
           position: [3, 1]
           span: [1, 4]
           flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 3
+          borderWidth: 5
 
-  - name: "Address Line 2"
+  - name: "City"
     has_labels: true
     has_control: true
     has_gap: false
@@ -44,14 +61,31 @@ controls:
             position: [4, 0]
             span: [1, 1]
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 6
+            borderWidth: 5
       - control:
           position: [4, 1]
-          span: [1, 4]
+          span: [1, 1]
           flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 3
+          borderWidth: 5
 
-  - name: "City"
+  - name: "State or Provence"
+    has_labels: true
+    has_control: true
+    has_gap: false
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [4, 2]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+            borderWidth: 5
+      - control:
+          position: [4, 3]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+          borderWidth: 5
+
+  - name: "Postal Code"
     has_labels: true
     has_control: true
     has_gap: false
@@ -61,14 +95,14 @@ controls:
             position: [5, 0]
             span: [1, 1]
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 6
+            borderWidth: 5
       - control:
           position: [5, 1]
           span: [1, 1]
           flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 3
+          borderWidth: 5
 
-  - name: "State or Provence"
+  - name: "Country"
     has_labels: true
     has_control: true
     has_gap: false
@@ -78,43 +112,9 @@ controls:
             position: [5, 2]
             span: [1, 1]
             flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 6
+            borderWidth: 5
       - control:
           position: [5, 3]
           span: [1, 1]
           flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 3
-
-  - name: "Postal Code"
-    has_labels: true
-    has_control: true
-    has_gap: false
-    items:
-      - labels:
-          - which: "LIX::Main"
-            position: [6, 0]
-            span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 6
-      - control:
-          position: [6, 1]
-          span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 3
-
-  - name: "Country"
-    has_labels: true
-    has_control: true
-    has_gap: false
-    items:
-      - labels:
-          - which: "LIX::Main"
-            position: [6, 2]
-            span: [1, 1]
-            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
-            borderWidth: 3
-      - control:
-          position: [6, 3]
-          span: [1, 1]
-          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
-          borderWidth: 3
+          borderWidth: 5
