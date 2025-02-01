@@ -1,6 +1,6 @@
 breaks:
   - after: ["Name Details", "Misc. User Items", "Contact Details"]
-  -
+
 controls:
 
   - name: "Name Details"
