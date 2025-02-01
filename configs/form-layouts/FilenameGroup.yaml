@@ -1,0 +1,24 @@
+controls:
+
+  - name: "Filename"
+    has_labels: true
+    has_control: true
+    items:
+      - labels:
+          - which: "LIX::Main"
+            position: [0, 0]
+            span: [1, 1]
+            flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT"]
+      - control:
+          position: [0, 1]
+          span: [1, 9]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW"]
+
+  - name: "Select"
+    has_labels: false
+    has_control: true
+    items:
+      - control:
+          position: [0, 10]
+          span: [1, 1]
+          flags: ["wxALIGN_CENTRE_VERTICAL", "wxALL"]
