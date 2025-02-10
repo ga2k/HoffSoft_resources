@@ -47,3 +47,16 @@ controls:
           flags: [ "wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT" ]
       - control:
           flags: [ "wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW" ]
+
+  - name: "Family Name First"
+    has_labels: true
+    has_control: true
+    items:
+      - control:
+          flags: [ "wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT" ]
+      - labels:
+          - which: "LIX:Main"
+            flags: [ "LeftAlignedLabelFlags" ]
+          - which: "LIX:Second"
+            span: [ 1, 2 ]
+            flags: [ "StdLabelFlags", "wxGROW" ]
