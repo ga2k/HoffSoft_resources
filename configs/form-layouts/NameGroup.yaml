@@ -1,5 +1,5 @@
 breaks:
-  - after: [ "Family Name", "Date of Birth", "Type" ]
+  - after: [ "Family Name", "Type", "[Family Name First]" ]
 
 controls:
   - name: "Given Name"
@@ -30,23 +30,14 @@ controls:
       - control:
           flags: [ "wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW" ]
 
-  - name: "Date of Birth"
-    has_labels: true
-    has_control: true
-    items:
-      - labels:
-          flags: [ "wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT" ]
-      - control:
-          flags: [ "wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW" ]
-
   - name: "Type"
     has_labels: true
     has_control: true
     items:
       - labels:
-          flags: [ "wxALIGN_CENTRE_VERTICAL", "wxALL", "wxALIGN_RIGHT" ]
+          flags: [ "StdLabelFlags", "wxRESERVE_SPACE_EVEN_IF_HIDDEN"]
       - control:
-          flags: [ "wxALIGN_CENTRE_VERTICAL", "wxALL", "wxGROW" ]
+          flags: [ "StdControlFlags", "wxRESERVE_SPACE_EVEN_IF_HIDDEN"]
 
   - name: "Family Name First"
     has_labels: true
