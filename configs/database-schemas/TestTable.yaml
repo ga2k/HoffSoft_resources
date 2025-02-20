@@ -1,0 +1,23 @@
+tables:
+  settings:
+    fields:
+      id:
+        type: integer
+        auto_increment: true
+        primary_key: true
+      fMagic:
+        type: integer
+        not_null: true
+      fVersion:
+        type: integer
+        not_null: true
+      fint:
+        type: integer
+      fdb:
+        type: double
+      fstr:
+        type: string
+      ftm:
+        type: date
+      fbool:
+        type: boolean
